@@ -6,6 +6,20 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">        
         <link rel="stylesheet" href="home.css"/>
+       <script>
+         function loadCoupon(){
+    document.getElementById("coupon").style.display="block"
+}
+
+function closeCoupon(){
+    document.getElementById("coupon").style.display="none"
+}    
+        function changeMode(){
+            let mybody = document.body;
+            mybody.classList.toggle('mydark')
+        }
+        
+    </script>
     </head>
     <body>
         <!-- navigation starts -->
@@ -45,7 +59,8 @@
                       <li><a href="#section42"> <span class="	glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download App</a></li>
                     </ul>
                   <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> cart</a></li>
-
+                  <li> <a href="#"><button onClick="changeMode()" class="changemode">Change Mode</button></li></a></li>
+     
                 </ul>
               </div>
             </div>
@@ -176,6 +191,13 @@
       </div>
     </div>
   </div>
+</div>
+<!-- coupon section-->
+
+<div id="coupon">
+  <!-- <h2>This is 50% Discount Coupons</h2> -->
+  <img src="img/Flipkartcoupon.png" style="border:2px solid #01ab2d;">
+  <button onClick="closeCoupon()" class="closebutton">&times;</button>
 </div>
 <!-- products section -->
 <div class="container-fluid" id="product-details" >
@@ -343,5 +365,8 @@
    <!-- end Footer section -->
     
     <script src="script.js"></script>
+    <script>
+      window.onload = loadCoupon()
+  </script>
     </body>
    

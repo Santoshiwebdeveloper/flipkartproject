@@ -1,3 +1,32 @@
+body{
+  background-color: white;
+  color:black
+}
+.mydark{
+  background-color: black;
+  color:white
+}
+.changemode{
+margin-top:-12px;
+          z-index:100;
+          position:absolute;
+          color: #2874f0;
+background-color: white;
+border: none;
+}
+#coupon{
+  height:200px;
+  width:400px;
+  background-color:gray;
+  z-index: 100;
+  position: absolute;
+  display: none;
+  margin-left: 37%;
+}
+.closebutton{
+  margin-left: 99%;
+    margin-top: -105%;
+}
 .btn{
     padding: 9px 12px;
 }
